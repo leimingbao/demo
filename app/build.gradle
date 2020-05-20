@@ -4,7 +4,12 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    buildToolsVersion "28.0.3"
+
+    dataBinding {
+        //noinspection DataBindingWithoutKapt
+        enabled = true
+    }
 
     defaultConfig {
         applicationId "com.example.myapplication"
@@ -21,6 +26,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
     }
 
 }
