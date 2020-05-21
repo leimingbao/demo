@@ -7,13 +7,13 @@
 
         <variable
             name="viewModel"
-            type="com.example.myapplication.UserViewModel" />
+            type="com.example.myapplication.domain.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".domain.MainActivity">
 
         <TextView
             android:id="@+id/text"
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/app_name"
-            android:onClick="onlick"
+            android:onClick="@{()->viewModel.onClick()}"
             app:layout_constraintTop_toBottomOf="@id/text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
