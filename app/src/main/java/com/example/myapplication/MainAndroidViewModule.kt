@@ -1,12 +1,16 @@
 package com.example.myapplication
 
 import com.example.myapplication.domain.MainActivity
+import com.example.myapplication.proxypattern.ProxyLoginActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
 @Module
-abstract class MainModule {
+abstract class MainAndroidViewModule {
 
     @ContributesAndroidInjector
     abstract fun bindMainActivity(): MainActivity
+
+    @ContributesAndroidInjector
+    abstract fun bindProxyLoginActivity(): ProxyLoginActivity
 }

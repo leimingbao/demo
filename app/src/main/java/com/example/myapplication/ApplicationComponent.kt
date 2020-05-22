@@ -4,7 +4,7 @@ import android.app.Application
 import dagger.Component
 import dagger.android.AndroidInjector
 
-@Component(modules = [MainModule::class])
+@Component(modules = [MainAndroidViewModule::class])
 interface ApplicationComponent : AndroidInjector<Application> {
     fun inject(application: AppApplication)
 }
