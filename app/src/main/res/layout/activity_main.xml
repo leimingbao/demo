@@ -28,29 +28,39 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
             android:onClick="@{()->viewModel.onClick()}"
+            android:text="@string/app_name"
             app:layout_constraintTop_toBottomOf="@id/text" />
 
         <Button
             android:id="@+id/proxypattern"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/button"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="proxyLogin"
             android:text="ProxyLoginActivity"
-            android:onClick="proxyLogin"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button" />
 
         <Button
             android:id="@+id/factorypattern"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/proxypattern"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="factoryActivity"
             android:text="factoryActivity"
-            android:onClick="factoryActivity"/>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proxypattern" />
+
+        <Button
+            android:id="@+id/strategyPattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="strategyActivity"
+            android:text="strategyActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/factorypattern" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

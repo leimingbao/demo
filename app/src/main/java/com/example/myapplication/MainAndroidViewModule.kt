@@ -3,6 +3,7 @@ package com.example.myapplication
 import com.example.myapplication.domain.MainActivity
 import com.example.myapplication.factorypattern.FactoryActivity
 import com.example.myapplication.proxypattern.ProxyLoginActivity
+import com.example.myapplication.stragetypattern.StrategyActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -17,4 +18,7 @@ abstract class MainAndroidViewModule {
 
     @ContributesAndroidInjector
     abstract fun bindFactoryActivity(): FactoryActivity
+
+    @ContributesAndroidInjector
+    abstract fun bindStrategyActivity(): StrategyActivity
 }
