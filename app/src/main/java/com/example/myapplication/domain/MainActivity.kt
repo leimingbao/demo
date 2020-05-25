@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.factorypattern.FactoryActivity
 import com.example.myapplication.proxypattern.ProxyLoginActivity
 import dagger.android.AndroidInjection
 import javax.inject.Inject
@@ -26,6 +27,11 @@ class MainActivity : AppCompatActivity() {
 
     fun proxyLogin(view: View) {
         val intent = Intent(this, ProxyLoginActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun factoryActivity(view: View){
+        val intent = Intent(this,FactoryActivity::class.java)
         startActivity(intent)
     }
 }

@@ -16,6 +16,7 @@ import javax.inject.Inject
  */
 class ProxyLoginActivity : AppCompatActivity() {
 
+    // lateinit 延迟初始化变量
     @Inject
     lateinit var proxyLoginViewModel: ProxyLoginViewModel
 

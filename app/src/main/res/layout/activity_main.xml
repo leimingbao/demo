@@ -33,14 +33,25 @@
             app:layout_constraintTop_toBottomOf="@id/text" />
 
         <Button
+            android:id="@+id/proxypattern"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:text="ProxyLoginActivity"
-            android:onClick="proxyLogin">
-        </Button>
+            android:onClick="proxyLogin"/>
+
+        <Button
+            android:id="@+id/factorypattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/proxypattern"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="factoryActivity"
+            android:onClick="factoryActivity"/>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
