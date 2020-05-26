@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.myapplication.R
+import com.example.myapplication.commandpattern.CommandActivity
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.factorypattern.FactoryActivity
 import com.example.myapplication.proxypattern.ProxyLoginActivity
@@ -38,6 +39,11 @@ class MainActivity : AppCompatActivity() {
 
     fun strategyActivity(view: View){
         val intent = Intent(this,StrategyActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun commandActivity(view: View){
+        val intent = Intent(this,CommandActivity::class.java)
         startActivity(intent)
     }
 }

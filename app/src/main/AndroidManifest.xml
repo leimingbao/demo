@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".stragetypattern.StrategyActivity"></activity>
+        <activity android:name=".commandpattern.CommandActivity"></activity>
+        <activity android:name=".stragetypattern.StrategyActivity" />
         <activity
             android:name=".factorypattern.FactoryActivity"
             android:label="@string/title_activity_factory"
