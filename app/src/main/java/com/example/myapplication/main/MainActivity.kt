@@ -1,4 +1,4 @@
-package com.example.myapplication.domain
+package com.example.myapplication.main
 
 import android.content.Intent
 import android.os.Bundle

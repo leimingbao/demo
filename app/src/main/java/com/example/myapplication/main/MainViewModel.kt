@@ -1,4 +1,4 @@
-package com.example.myapplication.domain
+package com.example.myapplication.main
 
 import androidx.databinding.ObservableInt
 import androidx.lifecycle.Lifecycle
