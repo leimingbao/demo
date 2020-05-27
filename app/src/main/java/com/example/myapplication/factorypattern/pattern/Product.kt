@@ -1,4 +1,4 @@
-package com.example.myapplication.factorypattern
+package com.example.myapplication.factorypattern.pattern
 
 abstract class Product {
     /**

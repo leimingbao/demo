@@ -1,4 +1,4 @@
-package com.example.myapplication.statuspattern
+package com.example.myapplication.statuspattern.pattern
 
 class PowerOnState : TvState {
     override fun nextChannel() {

@@ -1,6 +1,7 @@
-package com.example.myapplication.statuspattern
+package com.example.myapplication.statuspattern.pattern
 
-class TvController : PowerController {
+class TvController :
+    PowerController {
     private var tvState: TvState? = null
 
     override fun powerOn() {

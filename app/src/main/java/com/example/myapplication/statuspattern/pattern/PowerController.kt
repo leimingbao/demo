@@ -1,4 +1,4 @@
-package com.example.myapplication.statuspattern
+package com.example.myapplication.statuspattern.pattern
 
 interface PowerController {
     fun powerOn()

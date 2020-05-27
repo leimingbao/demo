@@ -1,4 +1,4 @@
-package com.example.myapplication.factorypattern
+package com.example.myapplication.factorypattern.pattern
 
 class ConcreteProductA : Product() {
     override fun method() {

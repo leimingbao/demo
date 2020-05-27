@@ -9,6 +9,7 @@ import com.example.myapplication.R
 import com.example.myapplication.commandpattern.CommandActivity
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.factorypattern.FactoryActivity
+import com.example.myapplication.observerpattern.ObserverActivity
 import com.example.myapplication.proxypattern.ProxyLoginActivity
 import com.example.myapplication.stragetypattern.StrategyActivity
 import dagger.android.AndroidInjection
@@ -32,18 +33,23 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun factoryActivity(view: View){
-        val intent = Intent(this,FactoryActivity::class.java)
+    fun factoryActivity(view: View) {
+        val intent = Intent(this, FactoryActivity::class.java)
         startActivity(intent)
     }
 
-    fun strategyActivity(view: View){
-        val intent = Intent(this,StrategyActivity::class.java)
+    fun strategyActivity(view: View) {
+        val intent = Intent(this, StrategyActivity::class.java)
         startActivity(intent)
     }
 
-    fun commandActivity(view: View){
-        val intent = Intent(this,CommandActivity::class.java)
+    fun commandActivity(view: View) {
+        val intent = Intent(this, CommandActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun observerActivity(view: View) {
+        val intent = Intent(this, ObserverActivity::class.java)
         startActivity(intent)
     }
 }
