@@ -16,11 +16,27 @@
         tools:context=".commandpattern.CommandActivity">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:onClick="@{()->viewModel.myinit()}"
             android:text="command print"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintDimensionRatio="h,16:9"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guildline"/>
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:barrierDirection="end"
+            app:constraint_referenced_ids="guildline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guildline"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.81" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

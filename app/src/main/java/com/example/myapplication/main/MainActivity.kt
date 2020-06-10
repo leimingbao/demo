@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingUtil
 import com.example.myapplication.R
 import com.example.myapplication.commandpattern.CommandActivity
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.decoretorpatten.DecoratorActivity
 import com.example.myapplication.factorypattern.FactoryActivity
 import com.example.myapplication.observerpattern.ObserverActivity
 import com.example.myapplication.proxypattern.ProxyLoginActivity
@@ -50,6 +51,11 @@ class MainActivity : AppCompatActivity() {
 
     fun observerActivity(view: View) {
         val intent = Intent(this, ObserverActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun decoratorActivity(view: View) {
+        val intent = Intent(this, DecoratorActivity::class.java)
         startActivity(intent)
     }
 }

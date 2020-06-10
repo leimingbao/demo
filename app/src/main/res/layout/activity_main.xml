@@ -82,5 +82,15 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/commandPattern" />
 
+        <Button
+            android:id="@+id/decoratorPattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="decoratorActivity"
+            android:text="decoratorActivity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/observerPattern" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

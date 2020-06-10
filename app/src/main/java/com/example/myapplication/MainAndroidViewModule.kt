@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import com.example.myapplication.commandpattern.CommandActivity
+import com.example.myapplication.decoretorpatten.DecoratorActivity
 import com.example.myapplication.main.MainActivity
 import com.example.myapplication.factorypattern.FactoryActivity
 import com.example.myapplication.observerpattern.ObserverActivity
@@ -29,4 +30,7 @@ abstract class MainAndroidViewModule {
 
     @ContributesAndroidInjector
     abstract fun bindObserverActivity(): ObserverActivity
+
+    @ContributesAndroidInjector
+    abstract fun bindDecoratorActivity(): DecoratorActivity
 }

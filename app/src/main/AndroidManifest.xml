@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".observerpattern.ObserverActivity"></activity>
+        <activity android:name=".decoretorpatten.DecoratorActivity"></activity>
+        <activity android:name=".decoretorpatten.DecoratorPatternActivity" />
+        <activity android:name=".observerpattern.ObserverActivity" />
         <activity android:name=".commandpattern.CommandActivity" />
         <activity android:name=".stragetypattern.StrategyActivity" />
         <activity
