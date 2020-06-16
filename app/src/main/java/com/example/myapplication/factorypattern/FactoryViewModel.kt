@@ -7,10 +7,12 @@ import javax.inject.Inject
 
 class FactoryViewModel @Inject constructor() {
 
-    fun printResult() {
+    fun printResult(a:String) {
         val factory: Factory =
             ConcreteFactory()
         var product: Product = factory.createProduct()
         product.method()
     }
+
+
 }
